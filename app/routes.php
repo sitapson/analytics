@@ -724,7 +724,7 @@ var search_term = getParameterByName('search');
 						<script type="text/javascript">
 						</script>
 						<form id="searchForm">
-							<input id="searchInput" type="text" style="border-width: 0px; box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0); height: 64px; font-size: .5em; font-weight: lighter;" placeholder="Find a new location"></input>
+							<input id="searchInput" type="text" style="border-width: 0px; box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0); height: 64px; font-size: .3em; font-weight: lighter;" placeholder="search for boobs Harry"></input>
 						</form>
 							
 
