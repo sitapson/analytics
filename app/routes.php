@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html style="padding-top: 0px; padding-left: 0px; padding-right: 0px">
+<html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<title>travellr.io</title>
