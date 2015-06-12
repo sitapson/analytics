@@ -4,6 +4,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<title>travellr.io</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
 		<!-- jquery -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script>
