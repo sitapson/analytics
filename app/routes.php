@@ -520,8 +520,6 @@ var search_term = getParameterByName('search');
 
       });
     }
-
-    initialize();
 });//]]>  
 
 </script>
@@ -695,7 +693,6 @@ var search_term = getParameterByName('search');
   <head>
     <meta charset="utf-8">
     <title>Google Maps JavaScript API v3 Example: Place Search</title>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&libraries=places"></script>
   </head>
   
   <body>
