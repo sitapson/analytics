@@ -464,12 +464,12 @@ var search_term = getParameterByName('search');
 
     function createMarker(place) {
       var specific_icon;
-      var black_marker = 'black-dot.png';
-      var blue_marker = 'blue-dot.png';
-      var green_marker = 'green-dot.png';
-      var orange_marker = 'orange-dot.png';
-      var purple_marker = 'purple-dot.png';
-      var red_marker= 'red-dot.png';
+      var black_marker = 'http://i.imgur.com/1dUZy7D.png';
+      var blue_marker = 'http://i.imgur.com/5brRGlX.png';
+      var green_marker = 'http://i.imgur.com/bGiOCif.png';
+      var orange_marker = 'http://i.imgur.com/5gm14kD.png';
+      var purple_marker = 'http://i.imgur.com/nQ4YHB8.png';
+      var red_marker= 'http://i.imgur.com/fncQLus.png';
 
       switch (true) {
         case (place.types.indexOf('bar') != -1):
