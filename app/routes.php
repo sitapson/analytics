@@ -431,7 +431,7 @@ $(window).load(function(){
           mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
         }
       });
-      var image = 'http://i.imgur.com/bGiOCif.png';
+      var image = 'http://i.imgur.com/LkvHwof.png';
       marker = new google.maps.Marker({
         map: map,
         animation: google.maps.Animation.DROP,
