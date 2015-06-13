@@ -688,14 +688,6 @@ var search_term = getParameterByName('search');
 		</style>
 
 </head>
-<body>
-  <!DOCTYPE html>
-<html>
-  
-  <head>
-    <meta charset="utf-8">
-    <title>Google Maps JavaScript API v3 Example: Place Search</title>
-  </head>
   
   <body>
     <div id="map"></div>
@@ -733,11 +725,6 @@ var search_term = getParameterByName('search');
 				</div>
 			</div>
   </body>
-
-</html>
-  
-</body>
-
 
 </html>
 
