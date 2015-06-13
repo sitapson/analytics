@@ -699,10 +699,10 @@ var search_term = getParameterByName('search');
   
   <body>
     <div id="map"></div>
-    <div id="results"></div>
+    <!--div id="results"></div>
     <div id="school"></div>
     <div id="food"></div>
-    <div id="park"></div>
+    <div id="park"></div-->
 			<div class="nav" id="box">
 				<div class="nav-row row">
 					<div class="small-3 columns nav-element nav-border nav-content nav-button">
