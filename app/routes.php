@@ -440,6 +440,8 @@ $(window).load(function(){
       });
 
 var search_term = getParameterByName('search');
+// set value of input
+document.getElementById("searchInput").setAttribute("value", search_term)
 
      var newPos = new google.maps.LatLng(lat, lon);
       var request = {
