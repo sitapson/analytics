@@ -431,7 +431,7 @@ $(window).load(function(){
           mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
         }
       });
-      var image = 'https://developers.google.com/maps/documentation/javascript/examples/images/beachflag.png';
+      var image = 'http://i.imgur.com/bGiOCif.png';
       marker = new google.maps.Marker({
         map: map,
         animation: google.maps.Animation.DROP,
@@ -505,7 +505,7 @@ var search_term = getParameterByName('search');
 
       placesList = document.getElementById('results');
 
-      placesList.innerHTML += '<p class="' + place.types[0] + '">' + place.name + '</p>';
+      //placesList.innerHTML += '<p class="' + place.types[0] + '">' + place.name + '</p>';
       
  
 
