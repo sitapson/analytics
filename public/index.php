@@ -1,51 +1,49 @@
 <?php
 /**
- * The main template file
+ * Laravel - A PHP Framework For Web Artisans
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * e.g., it puts together the home page when no home.php file exists.
- *
- * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
- *
- * @package WordPress
- * @subpackage FoundationPress
- * @since FoundationPress 1.0
+ * @package  Laravel
+ * @author   Taylor Otwell <taylorotwell@gmail.com>
  */
 
-get_header(); ?>
+/*
+|--------------------------------------------------------------------------
+| Register The Auto Loader
+|--------------------------------------------------------------------------
+|
+| Composer provides a convenient, automatically generated class loader
+| for our application. We just need to utilize it! We'll require it
+| into the script here so that we do not have to worry about the
+| loading of any our classes "manually". Feels great to relax.
+|
+*/
 
-<div class="row">
-	<div class="small-12 large-8 columns" role="main">
+require __DIR__.'/../bootstrap/autoload.php';
 
-	<?php if ( have_posts() ) : ?>
+/*
+|--------------------------------------------------------------------------
+| Turn On The Lights
+|--------------------------------------------------------------------------
+|
+| We need to illuminate PHP development, so let's turn on the lights.
+| This bootstraps the framework and gets it ready for use, then it
+| will load up this application so that we can run it and send
+| the responses back to the browser and delight these users.
+|
+*/
 
-		<?php do_action( 'foundationpress_before_content' ); ?>
+$app = require_once __DIR__.'/../bootstrap/start.php';
 
-		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'content', get_post_format() ); ?>
-		<?php endwhile; ?>
+/*
+|--------------------------------------------------------------------------
+| Run The Application
+|--------------------------------------------------------------------------
+|
+| Once we have the application, we can simply call the run method,
+| which will execute the request and send the response back to
+| the client's browser allowing them to enjoy the creative
+| and wonderful application we have whipped up for them.
+|
+*/
 
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-
-		<?php do_action( 'foundationpress_before_pagination' ); ?>
-
-	<?php endif;?>
-
-
-
-	<?php if ( function_exists( 'foundationpress_pagination' ) ) { foundationpress_pagination(); } else if ( is_paged() ) { ?>
-		<nav id="post-nav">
-			<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
-			<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
-		</nav>
-	<?php } ?>
-
-	<?php do_action( 'foundationpress_after_content' ); ?>
-
-	</div>
-	<?php get_sidebar(); ?>
-</div>
-<?php get_footer(); ?>
+$app->run();
